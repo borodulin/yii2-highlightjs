@@ -62,7 +62,7 @@ class HighlightjsWidget extends \yii\base\Widget
     public function init()
     {
         if (!isset($this->htmlOptions['id'])) {
-            $this->htmlOptions['id'] = $this->getId();
+            $this->htmlOptions['id'] = $this->getId() .'_hljs';
         }
         echo Html::beginTag($this->tag, $this->htmlOptions);
         if (is_string($this->language)) {
