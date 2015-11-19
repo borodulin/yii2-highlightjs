@@ -27,9 +27,11 @@ class HighlightjsAsset extends \yii\web\AssetBundle
 	 */
 	public function registerAssetFiles($view)
 	{
-	    if (!file_exists($filename = $this->sourcePath.'/styles/' . self::$style . '.css')) {
+	    $css = '/styles/' . self::$style . '.css';
+	    if (!file_exists($filename = $this->sourcePath.$css)) {
 	        throw new InvalidConfigException('Unknown style ' . self::$style);
 	    }
+	    $this->css = [$this->baseUrl . $css];
 	    parent::registerAssetFiles($view);
 	}
 }
