@@ -51,6 +51,11 @@ class HighlightjsWidget extends \yii\base\Widget
     public $style = 'default';
     
     /**
+     * @var string
+     */
+    public $content;
+    
+    /**
      * Initializes the widget.
      * If you override this method, make sure you call the parent implementation first.
      */
@@ -73,6 +78,9 @@ class HighlightjsWidget extends \yii\base\Widget
      */
     public function run()
     {
+        if ($this->content) {
+            echo Html::encode($this->content);
+        }
         echo Html::endTag('code');
         echo html::endTag($this->tag);
         
