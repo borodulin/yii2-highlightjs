@@ -5,7 +5,7 @@
  * @license https://github.com/borodulin/yii2-highlightjs/blob/master/LICENSE
  */
 
-namespace conquer\jcrop;
+namespace conquer\highlightjs;
 
 use yii\helpers\Html;
 use conquer\helpers\Json;
