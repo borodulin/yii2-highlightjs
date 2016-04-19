@@ -5,11 +5,14 @@
     "homepage": "https://github.com/borodulin/yii2-highlightjs",
     "type": "yii2-extension",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/borodulin/yii2-oauth2-server/issues",
+        "source": "https://github.com/borodulin/yii2-oauth2-server"
+    },
     "authors": [
         {
             "name": "Andrey Borodulin",
-            "email": "borodulin@gmail.com",
-            "homepage": "https://github.com/borodulin/yii2-highlightjs"
+            "email": "borodulin@gmail.com"
         }
     ],
     "extra": {
