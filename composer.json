@@ -1,13 +1,19 @@
 {
     "name": "conquer/highlightjs",
-    "description": "Yii2 Highlightjs widget",
-    "keywords": ["yii2", "extension", "widget", "highlightjs"],
+    "description": "highlight.js syntax highlighting widget for Yii2",
+    "keywords": [
+        "yii2",
+        "extension",
+        "widget",
+        "highlightjs",
+        "syntax highlighting"
+    ],
     "homepage": "https://github.com/borodulin/yii2-highlightjs",
     "type": "yii2-extension",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/borodulin/yii2-oauth2-server/issues",
-        "source": "https://github.com/borodulin/yii2-oauth2-server"
+        "issues": "https://github.com/borodulin/yii2-highlightjs/issues",
+        "source": "https://github.com/borodulin/yii2-highlightjs"
     },
     "authors": [
         {
@@ -17,17 +23,36 @@
     ],
     "extra": {
         "branch-alias": {
-          "dev-master": "1.0.0.x-dev"
+            "dev-master": "2.0.x-dev"
         }
-      },
-    "require": {
-    	"php": ">=5.4.0",
-    	"yiisoft/yii2": "*",
-    	"bower-asset/highlightjs": "*"
     },
-	"autoload": {
-		"psr-4": {
-			"conquer\\highlightjs\\": ""
-		}
-	}
+    "require": {
+        "php": "^8.0",
+        "yiisoft/yii2": "~2.0.14",
+        "npm-asset/highlightjs--cdn-assets": "^11.11"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "conquer\\highlightjs\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "conquer\\highlightjs\\tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
 }
